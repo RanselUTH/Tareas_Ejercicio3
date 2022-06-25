@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_verde"
+    tools:context=".ActivityListadoPersonas">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="217dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/logoblancouth" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listado de personas"
+        android:textColor="#FAF9F9"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borde"
+        android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+        android:ems="10"
+        android:hint="Buscar..."
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#0B0A0A"
+        android:textColorLink="#101010"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar">
+
+        <ListView
+            android:id="@+id/Listviewlistapersonas"
+            android:layout_width="360dp"
+            android:layout_height="220dp"
+            android:background="@drawable/fondo_verde"
+            android:cacheColorHint="#0B0A0A" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FAF7F7"
+        android:text="Editar"
+        android:textAlignment="viewStart"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_edit_24"
+        app:iconSize="40dp"
+        app:iconTint="#0CCA14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FBFBFB"
+        android:text="Volver"
+        android:textColor="#090909"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconTint="#0CCA14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
